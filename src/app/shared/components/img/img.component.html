@@ -1,0 +1,14 @@
+<picture>
+  @for (source of sources; track $index) {
+    <source
+      [srcset]="source.path"
+      [media]="source.media"
+    >
+  }
+  <img
+      [src]="path"
+      [alt]="alt"
+      loading="lazy"
+      decoding="async"
+    >
+</picture>
