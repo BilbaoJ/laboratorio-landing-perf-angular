@@ -45,3 +45,5 @@ Thumbs.db
 .lighthouseci/
 
 C:*
+
+package-lock.json
