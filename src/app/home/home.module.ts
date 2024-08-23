@@ -11,7 +11,7 @@ import { ContactComponent } from "./components/contact/contact.component";
 import { HomeComponent } from "./pages/home/home.component";
 import { CommonModule, NgOptimizedImage } from "@angular/common";
 import { HomeRoutingModule } from "./home-routing.module";
-import { NgChartsModule } from "ng2-charts";
+import { BaseChartDirective } from "ng2-charts";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { SwiperModule } from "swiper/angular";
 import { SharedModule } from "../shared/shared.module";
@@ -27,12 +27,13 @@ import { SharedModule } from "../shared/shared.module";
     IntegrationsComponent,
     CustomersComponent,
     ContactComponent,
-    HomeComponent
+    HomeComponent,
+    ContactComponent
   ],
   imports: [
     CommonModule,
     HomeRoutingModule,
-    NgChartsModule,
+    BaseChartDirective,
     FontAwesomeModule,
     SwiperModule,
     NgOptimizedImage,
